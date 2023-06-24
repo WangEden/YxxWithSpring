@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/panel_.css">
+    <script src="../libs/echarts.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <!-- <script type="importmap">
+        {
+        "imports": {
+            "three": "https://unpkg.com/three/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three/examples/jsm/"
+        }
+        }
+    </script> -->
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "../node_modules/three/build/three.module.js",
+            "three/addons/": "../node_modules/three/examples/jsm/"
+        }
+        }
+    </script>
+</head>
+<body>
+    <div class="root">
+
+        <div class="model"></div>
+        <div class="cover"></div>
+
+        <div class="left-panel">
+
+            <div class="header">
+
+                <div class="logo"></div>
+
+                <div class="title">
+                    <div>蚁形星智慧工厂</div>
+                    <div>YIXINGXING</div>
+                </div>
+
+            </div>
+
+            <div class="panelA panel1">
+
+                <div class="panelTitle">
+                    <i class='bx bx-command'></i>
+                    <span>信息摘要</span>
+                </div>
+
+                <div class="panelBody">
+
+                    <div id="chart1"></div>
+
+                    <div class="chart1-describe">
+    
+                        <div class="bx1">
+                            <div class="bxsp">
+                                <div class="t">38,000</div>
+                                <div class="b">
+                                    <div class="slb"></div>
+                                    <div class="dsc">
+                                        <div class="zh">预测数据</div>
+                                        <div class="en">ForeData</div>
+                                    </div>
+                                    <div class="blank"></div>
+                                </div>
+                            </div>
+                            <div class="bxsp">
+                                <div class="t">33,000</div>
+                                <div class="b">
+                                    <div class="slb"></div>
+                                    <div class="dsc">
+                                        <div class="zh">实际数据</div>
+                                        <div class="en">ActuData</div>
+                                    </div>
+                                    <div class="blank"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bx2">
+                            <div class="tb">
+                                <div class="cirbar" id="cir1">
+                                    <div id="cirLod1"><span>25</span></div>
+                                </div>
+                                <div class="tts"><div>物料增加</div></div>
+                                <div class="data"><div>440/2000</div></div>
+                            </div>
+                            <div class="tb">
+                                <div class="cirbar" id="cir2">
+                                    <div id="cirLod2"><span>20</span></div>
+                                </div>
+                                <div class="tts"><div>物料增加</div></div>
+                                <div class="data"><div>230/2000</div></div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="panelA panel2">
+
+                <div class="panelTitle">
+                    <div class="lc">
+                        <i class='bx bx-command'></i>
+                        <span>数据统计</span>
+                    </div>
+                    <div class="rc">
+                        <button>D</button>
+                        <button style="color: #fff;">W</button>
+                        <button>M</button>
+                    </div>
+                    
+                </div>
+
+                <div class="panelBody">
+
+                    <div class="tbtn">
+                        <button>
+                            <i class='bx bxs-grid-alt' ></i>
+                            <span>物资流动</span>
+                        </button>
+                        <button>
+                            <i class='bx bxl-slack' ></i>
+                            <span>流动分析</span>
+                        </button>
+                        <button>
+                            <i class='bx bxs-certification' ></i>
+                            <span>增长分析</span>
+                        </button>
+                    </div>
+                    <div id="chart2"></div>
+
+                </div>
+
+            </div>
+
+            <div class="panelA panel3">
+
+                <div class="panelTitle">
+                    <div class="lc">
+                        <i class='bx bx-command'></i>
+                        <span>信息列表</span>
+                    </div>
+                    <div class="rc">
+                        <span>总共:</span>
+                        <span>112,000</span>
+                    </div>
+
+                </div>
+
+                <div class="panelBody">
+
+                    <div class="sltbtn">
+                        <div class="btnn">
+                            <div class="lcc">
+                                <i class='bx bx-check-circle' ></i>
+                            </div>
+                            <div class="rcc">
+                                <div class="tt">
+                                    <div class="lccc">完成</div>
+                                    <div class="rccc">
+                                        <i class='bx bxs-down-arrow' ></i>
+                                    </div>
+                                </div>
+                                <div class="bb">6,000</div>
+                            </div>
+                        </div>
+                        <div class="btnn">
+                            <div class="lcc">
+                                <i class='bx bx-alarm' ></i>
+                            </div>
+                            <div class="rcc">
+                                <div class="tt">
+                                    <div class="lccc">预计</div>
+                                    <div class="rccc">
+                                        <i class='bx bxs-down-arrow' ></i>
+                                    </div>
+                                </div>
+                                <div class="bb">2,200</div>
+                            </div>
+                        </div>
+                        <div class="btnn">
+                            <div class="lcc">
+                                <i class='bx bx-message-rounded-minus' ></i>
+                            </div>
+                            <div class="rcc">
+                                <div class="tt">
+                                    <div class="lccc">撤销</div>
+                                    <div class="rccc">
+                                        <i class='bx bxs-down-arrow' ></i>
+                                    </div>
+                                </div>
+                                <div class="bb">3,000</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table">
+                        <div class="tbhd">
+                            <div class="tbl"><span>数据</span></div>
+                            <div class="tbl"><span>采样</span></div>
+                            <div class="tbl"><span>分析</span></div>
+                            <div class="tbl"><span>趋势</span></div>
+                        </div>
+                        <div class="tbbd">
+                            <div class="tbl"><span>2</span></div>
+                            <div class="tbl"><span>1</span></div>
+                            <div class="tbl"><span>3</span></div>
+                            <div class="tbl"><span>5</span></div>
+                        </div>
+                        <div class="tbbd">
+                            <div class="tbl"><span>1</span></div>
+                            <div class="tbl"><span>5</span></div>
+                            <div class="tbl"><span>23</span></div>
+                            <div class="tbl"><span>21</span></div>
+                        </div>
+                        <div class="tbbd">
+                            <div class="tbl"><span>26</span></div>
+                            <div class="tbl"><span>25</span></div>
+                            <div class="tbl"><span>46</span></div>
+                            <div class="tbl"><span>84</span></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mid-panel">
+
+            <div class="panelB panel4">
+
+                <div class="panelTitle">
+
+                    <div class="lc">
+                        <i class='bx bx-command'></i>
+                        <span>设备信息</span>
+                    </div>
+                    <div class="rc">
+                        <span>总工作效率：</span>
+                        <span>4,000</span>
+                        <span>KW</span>
+                    </div>
+                    
+                </div>
+
+                <div class="panelBody">
+
+                    <div class="ctl">
+
+                        <div class="ct">
+                            <div class="ctlch">
+                                <div class="tpdes"><span>工作功率</span></div>
+                                <div class="bpcir" id="chart3">
+                                    <div class="sh">
+                                        <div class="vh">
+                                            <span>200</span>
+                                            <span>w/d</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ctlch">
+                                <div class="tpdes"><span>工作负荷</span></div>
+                                <div class="bpcir" id="chart4">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cb">
+                            <span>2020/02/02 17:00:00</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ctr">
+                        <div class="xbx">
+                            <div class="adata"><span>600</span></div>
+                            <div class="des"><span>para1</span></div>
+                        </div>
+                        <div class="xbx">
+                            <div class="adata"><span>400</span></div>
+                            <div class="des"><span>para2</span></div>
+                        </div>
+                        <div class="xbx">
+                            <div class="adata"><span>205</span></div>
+                            <div class="des"><span>para3</span></div>
+                        </div>
+                        <div class="xbx">
+                            <div class="adata"><span>100</span></div>
+                            <div class="des"><span>para4</span></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="panelB panel5">
+
+                <div class="panelTitle">
+                    <i class='bx bx-command'></i>
+                    <span>运行数据检测</span>
+                </div>
+
+                <div class="panelBody">
+                    <div class="l-btr">
+                        <div id="chart8"></div>
+                        <!-- <div class="btr">
+                            <div class="sqr"></div>
+                            <div class="des"></div>
+                        </div>
+                        <div class="btr">
+                            <div class="sqr"></div>
+                            <div class="des"></div>
+                        </div>
+                        <div class="btr">
+                            <div class="sqr"></div>
+                            <div class="des"></div>
+                        </div> -->
+                    </div>
+                    <div id="chart5"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right-panel">
+
+            <div class="header">
+                <div class="l">
+                    <div class="ll">
+                        <i class='bx bx-git-merge' ></i>
+                    </div>
+                    <div class="rr">
+                        <span>版本信息</span>
+                        <span>v0.02</span>
+                    </div>
+                </div>
+                <div class="r">
+                    <div id="Thetime"></div>
+                    <div id="Thedate"></div>
+                </div>
+            </div>
+            <script>
+                var t = null;
+                    t = setTimeout(time,1000);//開始运行
+                    function time() {
+                        clearTimeout(t);//清除定时器
+                        dt = new Date();
+                            var y=dt.getFullYear();
+                            var mt=dt.getMonth()+1;
+                            var day=dt.getDate();
+                            var h=dt.getHours();//获取时
+                            var m=dt.getMinutes();//获取分
+                            var s=dt.getSeconds();//获取秒
+                        document.getElementById("Thetime").innerHTML = h+":"+m+":"+s+"";
+                        document.getElementById("Thedate").innerHTML = y+"/"+mt+"/"+day;
+                        t = setTimeout(time,1000); //设定定时器，循环运行     
+                    } 
+            </script>
+
+            <div class="panelC panel6">
+
+                <div class="panelTitle">
+                    <div class="t">
+                        <span>数据分析</span>
+                    </div>
+                    <div class="b">
+                        <span>[DAY]</span>
+                        <span>Data Analysis</span>
+                    </div>
+                </div>
+
+                <div class="panelBody">
+                    <div class="chart" id="chart6">
+
+                        <div class="slbli">
+                            <div class="t">
+                                <div class="xh">01</div>
+                                <div class="bt">RSRP</div>
+                                <div class="dat">900</div>
+                            </div>
+                            <div class="b">
+                                <div class="barLod">
+                                    <div class="bar bar1"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slbli">
+                            <div class="t">
+                                <div class="xh">02</div>
+                                <div class="bt">GCSDP</div>
+                                <div class="dat">844</div>
+                            </div>
+                            <div class="b">
+                                <div class="barLod">
+                                    <div class="bar bar2"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slbli">
+                            <div class="t">
+                                <div class="xh">03</div>
+                                <div class="bt">LACDA</div>
+                                <div class="dat">743</div>
+                            </div>
+                            <div class="b">
+                                <div class="barLod">
+                                    <div class="bar bar3"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slbli">
+                            <div class="t">
+                                <div class="xh">04</div>
+                                <div class="bt">PLAC</div>
+                                <div class="dat">536</div>
+                            </div>
+                            <div class="b">
+                                <div class="barLod">
+                                    <div class="bar bar4"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slbli">
+                            <div class="t">
+                                <div class="xh">05</div>
+                                <div class="bt">TRAS</div>
+                                <div class="dat">363</div>
+                            </div>
+                            <div class="b">
+                                <div class="barLod">
+                                    <div class="bar bar5"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slbli">
+                            <div class="t">
+                                <div class="xh">06</div>
+                                <div class="bt">VBHS</div>
+                                <div class="dat">474</div>
+                            </div>
+                            <div class="b">
+                                <div class="barLod">
+                                    <div class="bar bar6"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="r-btn-list">
+                        <div class="lst-t">
+                            <div class="lit">
+                                <span>统计</span>
+                                <span>STATISTICS</span>
+                            </div>
+                            <div class="lii">
+                                <span>TBS</span>
+                                <span>18</span>
+                            </div>
+                            <div class="lii">
+                                <span>AC</span>
+                                <span>22</span>
+                            </div>
+                        </div>
+                        <div class="lst-b">
+                            <div class="lit">
+                                <span>概况</span>
+                                <span>OVERVIEW</span>
+                            </div>
+                            <div class="lii">
+                                <span>DC</span>
+                                <span>12</span>
+                            </div>
+                            <div class="lii">
+                                <span>AC</span>
+                                <span>23</span>
+                            </div>
+                            <div class="lii">
+                                <span>GC</span>
+                                <span>25</span>
+                            </div>
+                            <div class="lii">
+                                <span>GA</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panelD panel7">
+
+                <div class="panelTitle">
+                    <div class="t">
+                        <span>GIS 数据分析</span>
+                    </div>
+                    <div class="b">
+                        <span>[GIS]</span>
+                        <span>Data Analysis</span>
+                    </div>
+                </div>
+
+                <div class="panelBody">
+                    <div class="chart7">
+                        <div class="map">
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+  
+    
+</body>
+    <!-- <script src="./node_modules/three/build/three.module.js" type="module"></script>
+    <script src="./node_modules/three/examples/jsm/controls/OrbitControls.js" type="module"></script>
+    <script src="./node_modules/three/examples/jsm/loaders/GLTFLoader.js"></script>
+    <script src="./node_modules/three/examples/jsm/loaders/DRACOLoader.js"></script> -->
+    <script src="../scripts/panel_.js"></script>
+    <script src="../scripts/model_.js" type="module"></script>
+</html>

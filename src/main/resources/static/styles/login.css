@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background: #333333;
+    transition: all 0.3s ease-in-out;
+}
+
+.glydl {
+    font-size: 2em;
+    color: #ede1e1;
+    letter-spacing: 00.05em;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+
+}
+
+.login-panel {
+    position: absolute;
+    margin-top: 35vh;
+    margin-left: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbox {
+    position: relative;
+    width: 200px;
+    margin-bottom: 5vh;
+    /* border: 2px solid black; */
+}
+  
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 0px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+  
+.inputbox span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+  
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+    color: #45f3ff;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0.75em;
+}
+  
+.inputbox i {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #6b6b6b62;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+  
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+    height: 44px;
+}
+
+.login-btn button {
+    --primary-color: transparent;
+    --secondary-color: #fff;
+    --hover-color: #6b6b6b62;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 2px solid #6b6b6b62;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    padding: 0.8em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+.login-btn button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.login-btn button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+  
+.login-btn button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+  
+.login-btn button:hover {
+    background-color: var(--hover-color);
+}
+  
+.login-btn button:hover .arrow {
+    background: var(--secondary-color);
+}
+  
+.login-btn button:hover .arrow:before {
+    right: 0;
+}

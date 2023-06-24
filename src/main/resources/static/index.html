@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="styles/style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div class="left-container">
+      <ul>
+        <li class="left-item active">
+          <i class='bx bxs-home-alt-2'></i>
+          <span>首页</span>
+        </li>
+        <li class="left-item">
+          <i class='bx bxs-dashboard' ></i>
+          <span>面板</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="right-container">
+      <header class="ontop sticky-top">
+          <ul class="logo-ul">
+            <li>           
+              <section class="logo">
+                <i class='bx bx-menu header ontop'></i>
+                <a class="header ontop title-1" href="#">蚁形星</a>
+              </section>
+            </li>
+            <li>
+              <section class="logo">
+                <a class="header ontop" style="padding-left: 1vw;">产品简介</a>
+              </section>
+            </li>
+          </ul>
+        <ul class="menu">
+          <li class="item header ontop"><a class="header ontop" href="#">首页</a></li>
+          <li class="item header ontop"><a class="header ontop" >介绍</a></li>
+          <li class="item header ontop"><a class="header ontop" >新闻</a></li>
+          <li class="item header ontop"><a class="header ontop" >联系</a></li>
+        </ul>
+      </header>
+
+      <section class="body" id="body1">
+        <div class="content">
+          <section id="loop-window" class="loopplay">
+            <ul class="slides">
+              <input type="radio" id="control-1" name="control" checked>
+              <input type="radio" id="control-2" name="control">
+              <input type="radio" id="control-3" name="control">
+              <li class="slide">
+                <div class="font-panel slided">
+                  <span class="slide-title slide-title-1">蚁形星</span>
+                  <span class="slide-describe">基于ROS机器人系统的多功能集成化工六足巡检机器人</span>
+                  <div class="slide-btn">
+                    <i class='bx bx-right-arrow-circle'></i>
+                    <span class="goto-describe">查看详情</span>
+                  </div>
+                </div>
+              </li>
+              <li class="slide">
+                <div class="font-panel">
+                  <span class="slide-title"><span class="slide-title-lg">智</span>为生产</span>
+                  <span class="slide-title" style="padding-left: 10vw;"><span class="slide-title-lg">志</span>在安全</span>
+                  <span class="slide-describe">无死角巡检 全地形移动 双定位模块精准控制</span>
+                  <div class="slide-btn" >
+                    <i class='bx bx-right-arrow-circle'></i>
+                    <span class="goto-describe dscb2">了解更多</span>
+                  </div>
+                </div>
+              </li>
+              <li class="slide">
+                <div class="font-panel">
+                  <span class="slide-title">新一代的智能巡检机器人</span>
+                  <span class="slide-describe">专心致力于智能化，无人化监测预警</span>
+                  <div class="slide-btn">
+                    <i class='bx bx-right-arrow-circle'></i>
+                    <span class="goto-describe">了解详情</span>
+                  </div>
+                </div>
+              </li>
+              <div class="controls-visible">
+                <label for="control-1"></label>
+                <label for="control-2"></label>
+                <label for="control-3"></label>
+              </div>
+              <div class="slide-progress-panel"></div>
+            </ul>
+          </section>
+
+          <section class="introduce">
+            <div class="introduce-title-panel">
+              <span class="introduce-title scroll-bottom">产品核心</span>
+              <span class="introduce-describe scroll-bottom"></span>
+              <hr class="introduce-gapline scroll-bottom">
+              <div class="learn-more scroll-bottom">
+                <span class="learn-more-word">了解更多</span>
+                <i class='bx bx-chevron-right'></i>
+              </div>
+            </div>
+            <div class="introduce-box-container">
+              <div class="introduce-box scroll-bottom card">
+                <div class="content">
+                  <h2>仿生结构</h2>
+                  <p>偏平机身和仿生机械足实现低矮区域移动，通过仿生机械足步态切换辅以真空气泵吸盘实现机器人轻松越障、吸附管道和楼梯爬行，巡检无死角</p>
+                  <button>查看更多</button>
+              </div>
+              </div>
+              <div class="introduce-box scroll-bottom card">
+                <div class="content">
+                  <h2>多项检测</h2>
+                  <p>集3D深度摄像头、红外热像仪、可见光摄像头、激光雷达、气体传感器、远场麦克风阵列于一体，实现图像视频、温度、声音、气体类型多方面数据的检测</p>
+                  <button>查看更多</button>
+              </div>
+              </div>
+              <div class="introduce-box scroll-bottom card">
+                <div class="content">
+                  <h2>数据互联</h2>
+                  <p>利用工业5G+Wi-Fi6模组和全向天线与工业互联网通信，实现巡检数据实时上传，实现人机协同、多机协同工作。</p>
+                  <button>查看更多</button>
+              </div>
+              </div>
+              <div class="introduce-box scroll-bottom card">
+                <div class="content">
+                  <h2>多端协同</h2>
+                  <p>搭载电脑端与手机端程序，实现工人对机器人工作模式和工作状态的实时监控、完成自主巡检与人工辅助巡检不同模式的切换、不同巡检功能的开关控制</p>
+                  <button>查看更多</button>
+              </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="introduce-2">
+
+            <div class="introduce-title-panel">
+              <span class="introduce-title scroll-bottom">产品特色</span>
+              <hr class="introduce-gapline scroll-bottom">
+            </div>
+
+            <div class="introduce-box-container-2">
+              <div class="intr-text">
+
+                <div class="feature-card scroll-bottom">
+                  <i class='bx bx-shape-triangle'></i>
+                  <h4 class="feature-card-h">无死角巡检</h4>
+                  <p>本作品创新性在 Jetson Nano 模块下运用仿生机械足，完成三角步态和波动
+                    步态的切换，实现全地形的移动；本作品创新地使用了真空发生装置与吸盘，实
+                    现机器人沿管壁移动进行巡检。</p>
+                </div>
+
+                <div class="feature-card scroll-bottom">
+                  <i class='bx bxs-analyse' ></i>
+                  <h4 class="feature-card-h">巡检精度高 </h4>
+                  <p>本产品将深度摄像头组和激光雷达高度集成与旋转云台中，可
+                    以进行 360°全方位监测；本巡检机器人装载了远场麦克风，可以进行巡检现场
+                    声接收，检测异常音频并进行声源定位。
+                    </p>
+                </div>
+
+              </div>
+              <div class="intr-img">
+                <img src="./resources/introduce/this.png" alt="">
+              </div>
+              <div class="intr-text">
+
+                <div class="feature-card scroll-bottom">
+                  <i class='bx bx-shape-circle' ></i>
+                  <h4 class="feature-card-h">精准控制</h4>
+                  <p>机器人采用机身姿态算法，保障机身稳定性；定位系统采用了 GPS-BD、
+                    ATGM336H-5N 双模定位模块，能耗低、定位精度高，保证机器人位置实时跟踪，
+                    对巡检机器人进行精确控制。
+                    </p>
+                </div>
+
+                <div class="feature-card scroll-bottom">
+                  <i class='bx bx-desktop' ></i>
+                  <h4 class="feature-card-h">数据可视化</h4>
+                  <p>“蚁形星” 基于 ROS 机器人系统的多功能集成化工六足巡检机器人
+                    起到了重要的作用；本作品连接起 Jetson Nano 模块与工业 5G+Wi-Fi6 模组实现
+                    高速算力，通过全向天线与工业互联网实时通信，完成数据的接受和传输。
+                    </p>
+                </div>
+
+              </div>
+            </div>
+
+          </section>
+
+          <section class="banner">
+            <div class="static-bg"></div>
+            <div class="textContainer">
+              <div class="titleFrame">
+                <div class="title">
+                  <span class="lt">蚁形星</span>
+                  <span class="lightS">Made in China</span>
+                </div>
+              </div>
+              <p>蚁形星科技有限责任公司拟成立与2023年，是一家集研究、生产、销售、服务与一体的高新技术公司，现阶段立足于化工厂智能巡检，专注于为提升巡检精确度、深入巡检死角、提升巡检安全性提供智能的、可靠的解决方案。</p>
+            </div>
+            <button>了解更多</button>
+
+          </section>
+
+          <section class="gallery">
+
+            <div class="galleryContainer">
+
+              <div class="itemLineBox">
+                <div class="dsc">
+                  <span>展厅</span>
+                </div>
+                <div class="sitem cnt"></div>
+                <div class="sitem bx"></div>
+              </div>
+
+              <div class="itemLineBox">
+                <div class="sitem cnt">
+                  <span class="redtext"></span>
+                  <span class="whitetext"></span>
+                </div>
+                <div class="sitem bx"></div>
+                <div class="sitem cnt">
+                  <span class="redtext"></span>
+                  <span class="whitetext"></span>
+                </div>
+                <div class="sitem bx"></div>
+                <div class="sitem cnt">
+                  <span class="redtext"></span>
+                  <span class="whitetext"></span>
+                </div>
+              </div>
+
+              <div class="itemLineBox">
+                <div class="sitem bx"></div>
+                <div class="sitem cnt">
+                  <span class="redtext"></span>
+                  <span class="whitetext"></span>
+                </div>
+                <div class="sitem bx"></div>
+                <div class="sitem cnt">
+                  <span class="redtext"></span>
+                  <span class="whitetext"></span>
+                </div>
+                <div class="sitem bx"></div>
+              </div>
+
+            </div>
+
+          </section>
+
+          <section class="culture">
+            <div class="imbg i1 scroll-left"></div>
+            <div class="imbg i2 scroll-right"></div>
+            <div class="cardContainer">
+              <div class="culcard">
+                <span class="scroll-bottom-fast">使命</span>
+                <p class="scroll-bottom-fast">智为生产，用先进机器人和人工智能技术提供高质量、高精度的巡检解决方案；志为安全，降低生产安全事故，成为行业安全守护者，助力经济社会高质量发展。</p>
+              </div>
+              <div class="culcard">
+                <span class="scroll-bottom">愿景</span>
+                <p class="scroll-bottom">成为全球领先的工业智能巡检机器人提供商，为安全生产保驾护航。</p>
+              </div>
+              <div class="culcard">
+                <span class="scroll-bottom-low">价值观</span>
+                <p class="scroll-bottom-low">安全、担当、协作、创新、进取、服务、活力</p>
+              </div>
+            </div>
+
+          </section>
+
+
+          <section class="aboutus">
+
+            <div class="contcnt">
+              <div class="itt itt1">
+                <span>蚁形星</span>
+                <p>yixingxing@live.com</p>
+                <span></span>
+              </div>
+              <div class="itt itt2"></div>
+              <div class="itt itt3">
+                <span>2023 蚁形星科技有限责任公司</span>
+                <span>所有权利保留</span>
+                <span>隐私政策</span>
+                <span></span>
+              </div>
+            </div>
+
+          </section>
+
+        </div>
+      </section>
+
+      <section class="body" id="body2">
+        <div style="width: 100%; height: 10vh;"></div>
+        <div class="content">
+          <section class="introduceAll">
+            <div class="t scroll-bottom">
+              <h2>气体检测</h2>
+            </div>
+            <div class="b scroll-bottom">
+              <div class="image1"></div>
+            </div>
+          </section>
+  
+          <section class="introduceAll">
+            <div class="t scroll-bottom">
+              <h2>红外测温</h2>
+            </div>
+            <div class="b scroll-bottom">
+              <div class="image2"></div>
+            </div>
+          </section>
+  
+          <section class="introduceAll">
+            <div class="t scroll-bottom">
+              <h2>全地形移动</h2>
+            </div>
+            <div class="b scroll-bottom">
+              <div class="image3"></div>
+            </div>
+          </section>
+
+          <section class="introduceAll">
+            <div class="t scroll-bottom">
+              <h2>自主循迹</h2>
+            </div>
+            <div class="b scroll-bottom">
+              <div class="image4"></div>
+            </div>
+          </section>
+          
+          <section class="introduceAll">
+            <div class="t scroll-bottom">
+              <h2>及时抢修</h2>
+            </div>
+            <div class="b scroll-bottom">
+              <div class="image5"></div>
+            </div>
+          </section>
+  
+          <section class="aboutus">
+  
+            <div class="contcnt">
+              <div class="itt itt1">
+                <span>蚁形星</span>
+                <p>yixingxing@live.com</p>
+                <span></span>
+              </div>
+              <div class="itt itt2"></div>
+              <div class="itt itt3">
+                <span>2023 蚁形星科技有限责任公司</span>
+                <span>所有权利保留</span>
+                <span>隐私政策</span>
+                <span></span>
+              </div>
+            </div>
+  
+          </section>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</body>
+<script src="scripts/content.js"></script>
+<script src="scripts/index.js"></script>
+</html>

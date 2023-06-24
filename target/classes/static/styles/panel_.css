@@ -1,0 +1,1298 @@
+.root {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.font {
+    color: #ffffff;
+}
+
+div { overflow: hidden; font-display: optional;}
+i { margin-left: 2%; color: #fff; font-size: 1em; }
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.573) 0%, rgba(0, 0, 0, 0.075) 42%, rgba(0, 0, 0, 0) 78%, rgba(4, 3, 28, 0.61) 100%);
+    pointer-events: none;
+}
+.model{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    /* background-image: url(../resources/bg-test.jpg); */
+    background-size: 100% 100%;
+}
+
+/* 左 */
+.left-panel {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: #676767; */
+}
+
+/* 描述1 */
+.left-panel .header {
+    height: 10%;
+    width: 90%;
+    /* border: 2px red solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-panel .header .logo {
+    height: 90%;
+    width: 28%;
+    /* border: #000 2px solid; */
+    background: url(../resources/logo/logo.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.left-panel .header .title {
+    height: 90%;
+    width: 68%;
+    /* border: #000 2px solid; */
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-panel .header .title div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    text-align:justify;
+    text-justify:distribute-all-lines;
+    text-align-last:justify;
+    /* background-color: blue; */
+    width: 100%;
+    height: 80%;
+}
+.left-panel .header .title div:nth-of-type(2) {
+    font-size: 1em;
+    text-align:justify;
+    text-justify:distribute-all-lines;
+    text-align-last:justify;
+    /* background-color: rgb(72, 72, 91); */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-panel .panel1 {
+    width:90%;
+    height: 28%;
+    /* border: 2px #000 solid; */
+}
+
+.left-panel .panel2 {
+    width:90%;
+    height: 28%;
+    /* border: 2px #000 solid; */
+}
+
+.left-panel .panel3 {
+    width:90%;
+    height: 28%;
+    /* border: 2px #000 solid; */
+}
+
+.mid-panel {
+    position: absolute;
+    width: 55%;
+    height: 22%;
+    bottom: 0;
+    left: calc(50% - 25%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: #292929; */
+}
+
+.mid-panel .panel4 {
+    height: 90%;
+    width: 38%;
+    /* border: #000 solid 2px; */
+}
+
+.mid-panel .panel5 {
+    height: 90%;
+    width: 59%;
+    /* border: #000 solid 2px; */
+}
+
+.right-panel {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    /* background-color: #262626; */
+}
+
+.right-panel .header {
+    width: 90%;
+    height: 8%;
+    /* border: red solid 2px; */
+}
+
+.right-panel .panel6 {
+    width: 90%;
+    height: 62%;
+    /* border: #000 solid 2px; */
+}
+
+.right-panel .panel7 {
+    width: 90%;
+    height: 30%;
+    /* border: #000 2px solid; */
+}
+
+.panelA, .panelB, .panelC, .panelD {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panelA .panelTitle {
+    width: 100%;
+    height: 14%;
+    /* border: red 2px solid; */
+}
+
+.panelA .panelBody {
+    width: 100%;
+    height: 77%;
+    /* border: red 2px solid; */
+}
+
+.panelB .panelTitle {
+    width: 100%;
+    height: 22%;
+    /* border: red 2px solid; */
+}
+
+.panelB .panelBody {
+    width: 100%;
+    height: 86%;
+    /* border: red 2px solid; */
+}
+
+.panelC .panelTitle {
+    width: 100%;
+    flex: 0.1 1 auto;
+    /* border: red 2px solid; */
+}
+
+.panelC .panelBody {
+    width: 100%;
+    flex: 0.8 1 auto;
+    /* border: red 2px solid; */
+}
+
+.panelD .panelTitle {
+    width: 100%;
+    flex: 0.25 1 auto;
+    /* border: red 2px solid; */
+}
+
+.panelD .panelBody {
+    width: 100%;
+    flex: 0.7 1 auto;
+    /* border: red 2px solid; */
+}
+
+.panelTitle {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2%;
+    backdrop-filter: blur(4px);
+}
+
+.panelA .panelTitle span,
+.panelB .panelTitle span { color: #fff; font-size: 0.2em;}
+
+.panelA .panelTitle::before,
+.panelB .panelTitle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 15%;
+    height: 5%;
+    left: 0;
+    background-color: rgba(255,255,255,1);
+}
+
+.panelA .panelTitle::after,
+.panelB .panelTitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    height: 5%;
+    left: 0;
+    background-color: rgba(255,255,255,1);
+    opacity: 0.5;
+}
+
+/* chart1 */
+.panel1 .panelBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel1 .panelBody #chart1 {
+    width: 46%;
+    height: 90%;
+    /* border: #fff solid 2px; */
+}
+
+.panel1 .panelBody .chart1-describe {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel1 .panelBody .chart1-describe .bx1 {
+    width: 100%;
+    height: 45%;
+    border: #fff solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.panel1 .panelBody .chart1-describe .bx1 .bxsp {
+    height: 80%;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel1 .panelBody .chart1-describe .bx1::before {
+    content: '';
+    width: 1px;
+    height: 80%;
+    position: absolute;
+    top: calc(50% - 40%);
+    left: calc(50% - 0.5%);
+    background-color: #fff;
+
+}
+
+.panel1 .panelBody .chart1-describe .bx1 .bxsp .t {
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.panel1 .panelBody .chart1-describe .bx1 .bxsp .b {
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel1 .panelBody .chart1-describe .bx1 .bxsp .b .slb {
+    width: 10%;
+    height: 100%;
+    background-color: blue;
+}
+
+.panel1 .panelBody .chart1-describe .bx1 .bxsp .b .dsc {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel1 .panelBody .chart1-describe .bx1 .bxsp .b .blank {
+    width: 10%;
+    height: 100%;
+}
+
+.panel1 .panelBody .chart1-describe .bx1 .bxsp .b .dsc .zh{
+    width: 100%;
+    height: 59%;
+    font-size: 0.05em;
+    display: flex;
+    align-items: center;
+    transform: scale(0.8);
+}
+.panel1 .panelBody .chart1-describe .bx1 .bxsp .b .dsc .en{
+    width: 100%;
+    height: 49%;
+    font-size: 0.02em;
+    display: flex;
+    align-items: center;
+    transform: scale(0.5);
+}
+
+.panel1 .panelBody .chart1-describe .bx2 {
+    width: 100%;
+    height: 45%;
+    border: #fff solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel1 .panelBody .chart1-describe .bx2 .tb {
+    width: 100%;
+    height: 46%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel1 .panelBody .chart1-describe .bx2 .tb .cirbar{
+    height: 90%;
+    width: 20%;
+    border: #fff solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.3em;
+    text-align: center;
+}
+
+.panel1 .panelBody .chart1-describe .bx2 .tb .cirbar span {
+    transform: scale(0.5);
+}
+
+.panel1 .panelBody .chart1-describe .bx2 .tb .cirbar #cirLod1 {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 2px solid ;
+    border-color:  rgba(255,255,255,0) rgba(255,255,255,0) #fff #fff ;
+    box-sizing: border-box;
+}
+
+.panel1 .panelBody .chart1-describe .bx2 .tb .cirbar #cirLod2 {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 2px solid ;
+    border-color:  rgba(255,255,255,0) rgba(255,255,255,0)  rgba(255,255,255,0) #fff;
+    box-sizing: border-box;
+}
+
+.panel1 .panelBody .chart1-describe .bx2 .tb .tts {
+    height: 90%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+.panel1 .panelBody .chart1-describe .bx2 .tb .tts div {
+    font-size: 0.05em;
+    color: #fff;
+    transform: scale(0.6);
+}
+.panel1 .panelBody .chart1-describe .bx2 .tb .data {
+    height: 90%;
+    width: 40%;
+    display: flex;
+    align-items: center;    display: flex;
+    align-items: center;
+}
+.panel1 .panelBody .chart1-describe .bx2 .tb .data div {
+    font-size: 0.05em;
+    color: #fff;
+    transform: scale(0.6);
+}
+
+/* chart2 */
+.panel2 .panelTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel2 .panelTitle .lc {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7%;
+}
+
+.panel2 .panelTitle .rc {
+    height: 100%;
+    width: 30%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.panel2 .panelTitle .rc::before {
+    content: '';
+    position: absolute;
+    width:3%;
+    height: 50%;
+    top: calc(50% - 25%);
+    left: calc(33%);
+    background-color: rgba(255,255,255,0.5);
+    transform: skewX(-10deg);
+} 
+.panel2 .panelTitle .rc::after {
+    content: '';
+    position: absolute;
+    width:3%;
+    height: 50%;
+    top: calc(50% - 25%);
+    right: calc(34%);
+    background-color: rgba(255,255,255,0.5);
+    transform: skewX(-8deg);
+}
+
+.panel2 .panelTitle .rc button {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    font-weight: 600;
+    font-size: 0.4em;
+}
+.panel2 .panelTitle .rc button:hover{
+    color: rgba(255,255,255,1);
+}
+
+.panel2 .panelBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel2 .panelBody .tbtn {
+    width: 100%;
+    height: 18%;
+    /* border: #fff solid 2px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel2 .panelBody .tbtn button {
+    height: 100%;
+    width: 30%;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    position: relative;
+    color: #ffffffbb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.panel2 .panelBody .tbtn button * {
+    font-size: 0.5em;
+}
+.panel2 .panelBody .tbtn button span {
+    transform: scale(0.8);
+}
+
+.panel2 .panelBody .tbtn button::before,
+.panel2 .panelBody .tbtn button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #ffffff6e;
+  transition: all .15s ease;
+}
+
+.panel2 .panelBody .tbtn button::before {
+    top: 0;
+    border-bottom-width: 0;
+}
+
+.panel2 .panelBody .tbtn button::after {
+    bottom: 0;
+    border-top-width: 0;
+}
+
+.panel2 .panelBody #chart2 {
+    width: 100%;
+    height: 75%;
+    border: #fff solid 2px;
+}
+
+/* table3 */
+.panel3 .panelTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel3 .panelTitle .lc {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7%;
+}
+
+.panel3 .panelTitle .rc {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel3 .panelTitle .rc span:nth-of-type(1) {
+    font-size: 0.5em;
+    font-weight: 200;
+    transform: scale(0.9);
+}
+
+.panel3 .panelBody {
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel3 .panelBody .sltbtn {
+    width: 100%;
+    height: 22%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel3 .panelBody .sltbtn .btnn {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel3 .panelBody .sltbtn .btnn .lcc {
+    width: 30%;
+    height: 75%;
+    border: 1px rgba(255,255,255,0.5) solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel3 .panelBody .sltbtn .btnn .lcc i{
+    font-size: 1.3em;
+}
+
+.panel3 .panelBody .sltbtn .btnn .rcc {
+    width: 60%;
+    height: 75%;
+    /* border: 1px white solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel3 .panelBody .sltbtn .btnn .rcc .tt {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel3 .panelBody .sltbtn .btnn .rcc .tt .lccc {
+    font-size: 0.1em;
+    color: rgba(255,255,255,0.5);
+    transform: scale(0.6);
+}
+.panel3 .panelBody .sltbtn .btnn .rcc .tt .rccc i{
+    font-size: 0.1em;
+    color: rgba(255,255,255,0.5);
+    transform: scale(0.6);
+}
+
+.panel3 .panelBody .sltbtn .btnn .rcc .bb {
+    width: 100%;
+    height: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 0.6em;
+}
+.panel3 .panelBody .sltbtn .btnn:nth-of-type(1) {
+    position: relative;
+}
+.panel3 .panelBody .sltbtn .btnn:nth-of-type(2) {
+    position: relative;
+}
+.panel3 .panelBody .sltbtn .btnn:nth-of-type(1)::before,
+.panel3 .panelBody .sltbtn .btnn:nth-of-type(2)::after {
+    position: absolute;
+    content: '';
+    width: 1%;
+    height: 80%;
+    background-color: rgba(255,255,255,0.5);
+    right: 0;
+    top: calc(50% - 40%)
+}
+
+.panel3 .panelBody .table {
+    width: 100%;
+    height: 72%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.panel3 .panelBody .table span {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.5em;
+    transform: scale(0.6);
+}
+
+.panel3 .panelBody .table .tbhd {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #49c0b645;
+}
+
+.panel3 .panelBody .table .tbbd {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.panel3 .panelBody .table .tbbd:nth-of-type(3) {
+    background-color: rgba(86, 207, 122, 0.436);
+}
+
+.panel3 .panelBody .table .tbl {
+    width: 25%;
+    height: 100%;
+}
+
+.panelTitle .rc {
+    position: relative;
+}
+.panelTitle .rc::after {
+    width: 10%;
+    height: 10%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+/* panel4 */
+.panel4 .panelTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel4 .panelTitle .lc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7%;
+    width: 30%;
+    height: 100%;
+}
+
+.panel4 .panelTitle .rc {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel4 .panelTitle .rc span{
+    color: rgba(255,255,255,0.7);
+    transform: scale(0.9);
+    display: flex;
+    align-items: center;
+}
+.panel4 .panelTitle .rc span:nth-of-type(2){
+    color: #fff;
+    transform: scale(1);
+}
+
+.panel4 .panelBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.panel4 .panelBody .ctl {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.panel4 .panelBody .ctl .ct {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel4 .panelBody .ctl .ct .ctlch {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel4 .panelBody .ctl .ct .ctlch .tpdes {
+    width: 100%;
+    height: 15%;
+    font-size: 0.1em;
+    display: flex;
+    align-items: center;
+}
+
+.panel4 .panelBody .ctl .ct .ctlch .tpdes span {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    transform: scale(0.8);
+}
+
+.panel4 .panelBody .ctl .ct .ctlch .bpcir {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+}
+
+.panel4 .panelBody .ctl .ct .ctlch #chart3 .sh {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: #fff #fff #ffffff52 #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel4 .panelBody .ctl .ct .ctlch #chart3 .sh .vh {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: #8aff3647 #8aff3647 #ffffff24 #8aff3647;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    color: #fff;
+}
+
+.panel4 .panelBody .ctl .ct .ctlch #chart3 .sh .vh span:nth-of-type(2) {
+    height: 20%;
+    color: rgba(255,255,255,0.7);
+    transform: scale(0.6);
+}
+
+.panel4 .panelBody .ctl .cb {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.1em;
+    border: 1px solid #fff;
+}
+
+.panel4 .panelBody .ctr {
+    width: 48%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+/* .panel4 .panelBody .ctr::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 25%;
+    color: #ffffff;
+} */
+
+.panel4 .panelBody .ctr .xbx {
+    box-sizing: border-box;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel4 .panelBody .ctr .xbx .adata {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.panel4 .panelBody .ctr .xbx .des {
+    font-size: 0.1em;
+    color: rgba(255,255,255,0.5); 
+}
+
+.panel4 .panelBody .ctr .xbx .des span {
+    transform: scale(0.1);
+}
+
+/* chart5 */
+.panel5 .panelBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #0089d8; */
+}
+
+.panel5 .panelBody .l-btr {
+    height: 90%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel5 .panelBody .l-btr #chart8 {
+    width: 90%;
+    height: 90%;
+}
+
+.panel5 .panelBody #chart5 {
+    height: 90%;
+    width: 70%;
+    /* border: #fff solid 2px; */
+}
+
+.right-panel .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.right-panel .header .l {
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right-panel .header .l .ll {
+    font-size: 1.6em;
+}
+
+.right-panel .header .l .ll i {
+    color: #8aff36;
+}
+
+.right-panel .header .l .rr {
+    font-size: 0.1em;
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right-panel .header .r {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right-panel .header .r div:nth-of-type(1) {
+    width: 100%;
+    height: 70%;
+    color: #fff;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: end;
+}
+
+.right-panel .header .r div:nth-of-type(2) {
+    width: 100%;
+    height: 30%;
+    color: #fff;
+    font-size: 0.4em;
+    display: flex;
+    letter-spacing: 0.4em;
+    justify-content: end;
+}
+
+.panel6 .panelTitle,
+.panel7 .panelTitle {
+    background: transparent;
+    backdrop-filter: blur(0px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.panel6 .panelTitle .t,
+.panel7 .panelTitle .t {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.panel6 .panelTitle .b,
+.panel7 .panelTitle .b {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    font-size: 0.1em;
+    color: rgba(255,255,255,0.5);
+    align-items: center;
+    justify-content: start;
+}
+
+.panel6 .panelTitle .b span,
+.panel7 .panelTitle .b span {
+    transform: scale(0.8);
+}
+.panel6 .panelTitle .b span:nth-of-type(1),
+.panel7 .panelTitle .b span:nth-of-type(1) {
+    color: #fff;
+}
+
+.panel6 .panelBody {
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel6 .panelBody .chart {
+    width: 75%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.panel6 .panelBody .chart .slbli {
+    width: 95%;
+    height: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel6 .panelBody .chart .slbli .t {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.panel6 .panelBody .chart .slbli .t .xh {
+    border: 1px solid #fff;
+    width: 10%;
+    height: 80%;
+    text-align: center;
+}
+
+.panel6 .panelBody .chart .slbli .t .bt {
+    color: rgba(255,255,255,0.7);
+    width: 40%;
+    height: 90%;
+    font-size: 0.6em;
+    display: flex;
+    align-items: center;
+}
+
+.panel6 .panelBody .chart .slbli .t .dat {
+    width: 40%;
+    height: 90%;
+
+    text-align: end;
+}
+
+.panel6 .panelBody .chart .slbli .b {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+}
+
+.panel6 .panelBody .chart .slbli .b .barLod {
+    width: 100%;
+    height: 30%;
+    background: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    position: relative;
+}
+
+.panel6 .panelBody .chart .slbli .b .barLod .bar {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    box-shadow: rgb(255, 255, 255) 0 0 25px 0;
+    background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,1) 100%);
+}
+
+.panel6 .panelBody .chart .slbli .b .barLod .bar1 { width: 90%;}
+.panel6 .panelBody .chart .slbli .b .barLod .bar2 { width: 80%;}
+.panel6 .panelBody .chart .slbli .b .barLod .bar3 { width: 76%;}
+.panel6 .panelBody .chart .slbli .b .barLod .bar4 { width: 56%;}
+.panel6 .panelBody .chart .slbli .b .barLod .bar5 { width: 37%;}
+.panel6 .panelBody .chart .slbli .b .barLod .bar6 { width: 47%;}
+
+.panel6 .panelBody .r-btn-list {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.panel6 .panelBody .r-btn-list .lst-t {
+    width: 90%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.panel6 .panelBody .r-btn-list .lit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    font-size: 0.8em;
+
+}
+
+.panel6 .panelBody .r-btn-list .lit span:nth-of-type(2) {
+    transform: scale(0.5);
+}
+
+.panel6 .panelBody .r-btn-list .lii {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.panel6 .panelBody .r-btn-list .lii span:nth-of-type(1) {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.4em;
+    transform: scale(0.7);
+}
+.panel6 .panelBody .r-btn-list .lii span:nth-of-type(2) {
+    color: #fff;
+    font-size: 0.7em;
+    transform: scale(0.9);
+}
+
+.panel6 .panelBody .r-btn-list .lst-t .lit {
+    width: 75%;
+    height: 25%;
+}
+
+.panel6 .panelBody .r-btn-list .lst-t .lii {
+    width: 75%;
+    height: 25%;
+}
+
+.panel6 .panelBody .r-btn-list .lst-b .lit {
+    width: 75%;
+    height: 15%;
+}
+
+.panel6 .panelBody .r-btn-list .lst-b .lii {
+    width: 75%;
+    height: 15%;
+}
+
+.panel6 .panelBody .r-btn-list .lit span:nth-of-type(2) {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.4em;
+}
+
+.panel6 .panelBody .r-btn-list .lst-b {
+    width: 90%;
+    height:50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.panel7 .panelTitle {
+    height: 15%;
+}
+
+.panel7 .panelBody {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel7 .panelBody .chart7 {
+    width: 100%;
+    height: 90%;
+    background: url(../resources/gis.png);
+    opacity: 0.8;
+}
