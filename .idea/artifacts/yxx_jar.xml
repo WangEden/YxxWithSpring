@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="yxx:jar">
+  <artifact type="exploded-ear" build-on-make="true" name="yxx:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/yxx_jar</output-path>
-    <root id="archive" name="yxx_jar.jar">
+    <root id="root">
       <element id="archive" name="yxx.jar">
         <element id="module-output" name="yxx" />
       </element>
