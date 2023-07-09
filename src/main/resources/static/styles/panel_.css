@@ -22,6 +22,105 @@ i { margin-left: 2%; color: #fff; font-size: 1em; }
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.573) 0%, rgba(0, 0, 0, 0.075) 42%, rgba(0, 0, 0, 0) 78%, rgba(4, 3, 28, 0.61) 100%);
     pointer-events: none;
 }
+
+.cover .progress {
+    position: absolute;
+    width: 16%;
+    height: 10%;
+    left: calc(50% - 8%);
+    top: calc(50% - 5%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover .progress .loader {
+height: 50px;
+width: 50px;
+position: relative;
+}
+
+.cover .progress .block {
+height: 10px;
+width: 10px;
+background-color: black;
+position: absolute;
+opacity: 0;
+}
+
+.cover .progress .b_1 {
+top: 0;
+left: 0;
+animation: load 2s infinite;
+animation-delay: 0;
+}
+
+.cover .progress .b_2 {
+top: 0;
+left: 20px;
+animation: load 2s infinite;
+animation-delay: 0.25s;
+}
+
+.cover .progress .b_3 {
+top: 0;
+right: 0;
+animation: load 2s infinite;
+animation-delay: 0.5s;
+}
+
+.cover .progress .b_4 {
+top: 20px;
+right: 0;
+animation: load 2s infinite;
+animation-delay: 0.75s;
+}
+
+.cover .progress .b_5 {
+bottom: 0;
+right: 0;
+animation: load 2s infinite;
+animation-delay: 1s;
+}
+
+.cover .progress .b_6 {
+bottom: 0;
+left: 20px;
+animation: load 2s infinite;
+animation-delay: 1.25s;
+}
+
+.cover .progress .b_7 {
+bottom: 0;
+left: 0;
+animation: load 2s infinite;
+animation-delay: 1.5s;
+}
+
+.cover .progress .b_8 {
+top: 20px;
+left: 0;
+animation: load 2s infinite;
+animation-delay: 1.75s;
+}
+
+@keyframes load {
+0% {
+    opacity: 1;
+}
+
+85% {
+    opacity: 0;
+}
+
+100% {
+    opacity: 1;
+}
+}
+
+
+
 .model{
     position: absolute;
     width: 100%;
