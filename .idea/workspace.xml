@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="yxxserver:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="64f27399-c79f-4c6f-a0b5-34bce99a4da2" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/yxxserver_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/yxx_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/jackson-annotations-2.13.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/jackson-core-2.13.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/jackson-databind-2.13.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/jackson-datatype-jdk8-2.13.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/jackson-datatype-jsr310-2.13.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/jackson-module-parameter-names-2.13.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/jul-to-slf4j-1.7.36.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/log4j-api-2.17.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/log4j-to-slf4j-2.17.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/logback-classic-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/logback-core-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/lombok-1.18.24.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/mysql-connector-java-8.0.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/slf4j-api-1.7.36.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/snakeyaml-1.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-aop-5.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-beans-5.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-boot-2.6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-boot-autoconfigure-2.6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-boot-starter-2.6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-boot-starter-json-2.6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-boot-starter-logging-2.6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-boot-starter-tomcat-2.6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-boot-starter-web-2.6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-context-5.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-core-5.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-expression-5.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-jcl-5.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-web-5.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/spring-webmvc-5.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/tomcat-embed-core-9.0.62.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/tomcat-embed-el-9.0.62.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/tomcat-embed-websocket-9.0.62.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/yxx.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yxx_jar/yxx_jar.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2SG11V16kKKUtoJnixnlXUf0niI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/ApplicationData/Web/YXX",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "工件",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="64f27399-c79f-4c6f-a0b5-34bce99a4da2" name="更改" comment="" />
+      <created>1688757891173</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688757891173</updated>
+      <workItem from="1688757892810" duration="874000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

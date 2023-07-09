@@ -1,9 +1,5 @@
 server:
-<<<<<<< HEAD
   port: 8080
-=======
-  port: 8081
->>>>>>> parent of c6c0bbb (new)
 spring:
   datasource:
     # jdbc 连接基础配置
