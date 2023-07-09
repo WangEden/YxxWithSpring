@@ -38,7 +38,14 @@ loader.setDRACOLoader( dracoLoader );
 loader.load( path, function ( gltf ) {
     scene.add( gltf.scene );
     animate();
-}, undefined, function ( error ) {
+}, function (xhr) {
+    var _onProgress = Math.floor(xhr.loaded / xhr.total * 100);
+    var progress = document.querySelector('.cover .progress .progressText');
+    progress.innerText = _onProgress +  '%';
+    if (_onProgress == 100) {
+        document.querySelector('.cover .progress').style.display = 'none';
+    }
+}, function ( error ) {
     console.error( error );
 } );
 

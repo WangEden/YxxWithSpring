@@ -35,7 +35,21 @@
     <div class="root">
 
         <div class="model"></div>
-        <div class="cover"></div>
+        <div class="cover">
+            <div class="progress">
+                <div class="loader">
+                    <div class="block b_1"></div>
+                    <div class="block b_2"></div>
+                    <div class="block b_3"></div>
+                    <div class="block b_4"></div>
+                    <div class="block b_5"></div>
+                    <div class="block b_6"></div>
+                    <div class="block b_7"></div>
+                    <div class="block b_8"></div>
+                </div>
+                <div class="progressText">0%</div>
+            </div>
+        </div>
 
         <div class="left-panel">
 
@@ -285,7 +299,7 @@
                         </div>
 
                         <div class="cb">
-                            <span>2020/02/02 17:00:00</span>
+                            <span id="cbTime">2020/02/02 17:00:00</span>
                         </div>
 
                     </div>
@@ -374,6 +388,7 @@
                             var s=dt.getSeconds();//获取秒
                         document.getElementById("Thetime").innerHTML = h+":"+m+":"+s+"";
                         document.getElementById("Thedate").innerHTML = y+"/"+mt+"/"+day;
+                        document.getElementById('cbTime').innerText = y+"/"+mt+"/"+day+' '+h+":"+m+":"+s+"";
                         t = setTimeout(time,1000); //设定定时器，循环运行     
                     } 
             </script>
